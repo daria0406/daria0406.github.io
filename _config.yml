@@ -1,0 +1,74 @@
+# Site configuration
+title: Daria Zahaleanu
+email: daria.zahaleanu@example.com
+description: Academic researcher and professional - exploring ideas and building solutions
+baseurl: ""
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Jekyll configuration
+permalink: /blog/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Social links (optional)
+github_username: yourusername
+twitter_username: yourusername
+linkedin_username: yourusername
+
+# SEO settings
+author: Daria Zahaleanu
+twitter:
+  card: summary
+  username: yourusername
+
+# Navigation
+navigation:
+  - name: About
+    link: /
+  - name: Blog
+    link: /blog/
+  - name: Research
+    link: /research/
+  - name: Projects
+    link: /projects/
+  - name: Miscellaneous
+    link: /miscellaneous/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
