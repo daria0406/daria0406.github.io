@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-# Projects
+<!-- # Projects -->
 
 A collection of professional projects, software tools, and collaborative initiatives.
 

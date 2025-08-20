@@ -1,23 +1,24 @@
 // Academic theme styles inspired by nunosempere.com
 
 // Base variables - Clean academic theme like nunosempere.com
-$base-font-family: Georgia, "Times New Roman", Times, serif;
-$base-font-size: 16px;
+$base-font-family: 'IBM Plex Mono', 'Share Tech Mono', 'Orbitron', monospace, Arial, serif;
+//$base-font-family: 'Neue Haas Grotesk Text Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-size: 18px;
 $base-font-weight: 400;
 $small-font-size: 14px;
-$base-line-height: 1.6;
+$base-line-height: 1.7;
 
 $spacing-unit: 30px;
 
 $text-color: #333;
 $background-color: #fff;
-$brand-color: #0066cc;
+$brand-color: #5c00cc;
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
-$content-width: 800px;
+$content-width: 1000px;
 $on-palm: 600px;
 $on-laptop: 800px;
 

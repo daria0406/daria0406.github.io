@@ -1,9 +1,9 @@
 # Site configuration
 title: Daria Zahaleanu
-email: daria.zahaleanu@example.com
+email: daria.zahaleanu@gmail.com
 description: Academic researcher and professional - exploring ideas and building solutions
 baseurl: ""
-url: "https://yourusername.github.io"
+url: "https://dariazahaleanu.com"
 
 # Build settings
 markdown: kramdown
@@ -34,10 +34,10 @@ navigation:
     link: /blog/
   - name: Research
     link: /research/
-  - name: Projects
-    link: /projects/
-  - name: Miscellaneous
-    link: /miscellaneous/
+  - name: AI Guide
+    link: /ai-guide/
+  - name: CV
+    link: /cv/
 
 # Collections
 collections:

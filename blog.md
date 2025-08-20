@@ -4,9 +4,9 @@ title: Blog
 permalink: /blog/
 ---
 
-# Blog
+<!-- # Blog -->
 
-Thoughts, insights, and commentary on topics in my field and beyond.
+Thoughts, insights, and commentary on topics about AI and beyond.
 
 ---
 

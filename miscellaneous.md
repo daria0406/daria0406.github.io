@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Miscellaneous
-permalink: /miscellaneous/
+title: CV
+permalink: /cv/
 ---
 
-# Miscellaneous
+<!-- # cv -->
 
-Various interests, activities, and content that don't fit neatly into other categories.
+<embed src="/cv/Daria_Zahaleanu_CV_Aug25.pdf" type="application/pdf" width="100%" height="1000px" />
+
+<!-- Various interests, activities, and content that don't fit neatly into other categories.
 
 ## Teaching & Mentoring
 
@@ -78,4 +80,4 @@ A brief section on your professional philosophy, approach to work-life balance, 
 
 ---
 
-*"A meaningful quote that reflects your approach to work or life."*
+*"A meaningful quote that reflects your approach to work or life."* -->

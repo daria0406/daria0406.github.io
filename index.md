@@ -5,11 +5,13 @@ title: About
 
 # Daria Zahaleanu
 
-I am Daria Zahaleanu. I write software and post about AI. 
+I am Daria. I write code and post about AI. 
 
-![Professional photo of Daria Zahaleanu](images/darz.jpg)
+<!-- ![Professional photo of Daria Zahaleanu](images/darz.jpg) -->
+<img src="images/darz copy.jpg" alt="Professional photo of Daria Zahaleanu"/>
 
-## Highlights
+
+<!-- ## Highlights
 
 <div class="highlights">
 
@@ -20,14 +22,16 @@ I am Daria Zahaleanu. I write software and post about AI.
 3. **[Research](/research/)**: Academic publications and ongoing research projects
 4. **[Professional Services](link-to-consulting-or-services)**: How I contribute value to organizations and projects
 
-</div>
+</div> -->
 
 ## Brief Bio
 
-Write a concise paragraph about your background, education, current position, and main areas of expertise. Keep this professional but personable.
+I am a computer engineer with a passion for AI. Professional with a proven track record of transforming data into production‐ready platforms and a passion for AI systems. Researcher to leveraging AI and technical excellence for the greater good.
 
-
+I hold a MSc. in Computer Science and a BSc in Computer Engineering. Check my CV in the section above.
 
 ---
+<br>
+
 
 *Last updated: {{ "now" | date: "%B %Y" }}*

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The MiniCheck Method for Efficient and Verifiable LLM Fact-Checking | Daria Zahaleanu</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="The MiniCheck Method for Efficient and Verifiable LLM Fact-Checking" />
+<meta name="author" content="Daria Zahaleanu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Breaking Down Fake News: An Inside Look at the MiniCheck Method" />
+<meta property="og:description" content="Breaking Down Fake News: An Inside Look at the MiniCheck Method" />
+<link rel="canonical" href="http://localhost:4000/blog/2025/08/14/a-visual-guide-to-ai-interpretability/" />
+<meta property="og:url" content="http://localhost:4000/blog/2025/08/14/a-visual-guide-to-ai-interpretability/" />
+<meta property="og:site_name" content="Daria Zahaleanu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-14T13:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The MiniCheck Method for Efficient and Verifiable LLM Fact-Checking" />
+<meta name="twitter:site" content="@yourusername" />
+<meta name="twitter:creator" content="@Daria Zahaleanu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Daria Zahaleanu"},"dateModified":"2025-08-14T13:00:00+02:00","datePublished":"2025-08-14T13:00:00+02:00","description":"Breaking Down Fake News: An Inside Look at the MiniCheck Method","headline":"The MiniCheck Method for Efficient and Verifiable LLM Fact-Checking","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025/08/14/a-visual-guide-to-ai-interpretability/"},"url":"http://localhost:4000/blog/2025/08/14/a-visual-guide-to-ai-interpretability/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Daria Zahaleanu" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><!-- <a class="site-title" rel="author" href="/">Daria Zahaleanu</a> --><nav class="site-nav">
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger">
+    <span class="menu-icon">
+      <svg viewBox="0 0 18 15" width="18px" height="15px">
+        <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.484C18,14.304,17.335,14.969,16.516,14.969H1.484 C0.665,14.969,0,14.304,0,13.484l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.001,18,12.665,18,13.484L18,13.484z"/>
+      </svg>
+    </span>
+  </label>
+
+  <div class="trigger"><a class="page-link" href="/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/research/">Research</a><a class="page-link" href="/ai-guide/">AI Guide</a><a class="page-link" href="/cv/">CV</a></div>
+</nav>
+</div>
+
+</header>
+<main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The MiniCheck Method for Efficient and Verifiable LLM Fact-Checking</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-08-14T13:00:00+02:00" itemprop="datePublished">Aug 14, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Daria Zahaleanu</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><strong>Breaking Down Fake News: An Inside Look at the MiniCheck Method</strong></p>
+
+<p>In an era of increasingly complex and nuanced misinformation, fact-checking a single claim can be a painstaking process. The MiniCheck method is a novel approach that automates this human-like workflow by using a multi-stage, Chain-of-Thought (CoT) reasoning process powered by large language models (LLMs). Rather than simply assigning a label, MiniCheck deconstructs a claim, verifies its components, and then synthesizes a final verdict.</p>
+
+<p>This methodology demonstrates a practical application of LLMs for high-stakes tasks, showing how they can be orchestrated in a pipeline to produce more transparent and verifiable results.</p>
+
+<p><strong>The Three Stages of MiniCheck</strong></p>
+<ol>
+  <li>Claim Decomposition: The process begins by feeding an original claim to a powerful LLM, which acts as a “decomposer.” The model’s sole task is to break the complex claim into a list of simple, verifiable sub-claims. For example, the claim “A new jobs report shows unemployment is at a 50-year low due to growth in manufacturing” would be broken into two sub-claims:</li>
+</ol>
+
+<ul>
+  <li>
+    <p>“Unemployment has fallen to a 50-year low.”</p>
+  </li>
+  <li>
+    <p>“The decline is driven by growth in the manufacturing sector.”
+This step is critical because it isolates individual facts that can be checked independently.</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>Sub-Claim Verification: In this stage, a separate model (the “verifier”) analyzes each sub-claim against a provided piece of evidence, such as a news article or official report. Using a specific prompt structure, the verifier determines whether the evidence supports, contradicts, or provides not enough information to verify the sub-claim. Crucially, this stage can be performed in a batch, making it highly efficient.</p>
+  </li>
+  <li>
+    <p>Verdict Aggregation: The final verdict is an aggregation of the verifier’s results. The rule is simple yet powerful: if even a single sub-claim is found to be Contradicted by the evidence, the entire original claim is flagged as False. This mimics the logical principle that a single factual error can invalidate a larger statement.</p>
+  </li>
+</ol>
+
+<p><strong>Results and Key Insights</strong>
+MiniCheck was benchmarked on the LIAR-PLUS dataset, which contains claims paired with their corresponding justification texts. Using GPT-3.5 Turbo for both the decomposition and verification steps, the method achieved an impressive overall accuracy of 67.5%.</p>
+
+<p>The classification report provides a deeper understanding of its performance:</p>
+
+<ul>
+  <li>
+    <p>High Precision: The model had a high precision for “False” claims (84%), meaning that when it labeled something as false, it was almost certainly correct.</p>
+  </li>
+  <li>
+    <p>Lower Recall: The recall for false claims was 57%, indicating that some false claims were missed, likely because the verifier could not find a clear contradiction in the evidence and defaulted to “Not Enough Information.”</p>
+  </li>
+</ul>
+
+<p><strong>Conclusion</strong></p>
+
+<p>The MiniCheck method highlights both the promise and the challenges of using LLMs for complex, multi-step tasks. While the process itself is a major step toward creating more transparent and explainable AI systems, its accuracy is heavily dependent on the capabilities of the underlying LLMs and the quality of the provided evidence.</p>
+
+  </div><a class="u-url" href="/blog/2025/08/14/a-visual-guide-to-ai-interpretability/" hidden></a>
+</article>
+
+    </div>
+  </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <!-- <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+          <ul class="contact-list">
+            
+          </ul>
+      </div>
+      <div class="footer-col">
+        <p>Academic researcher and professional - exploring ideas and building solutions</p>
+      </div>
+    </div> -->
+
+    <!-- <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/yourusername" title="yourusername"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/yourusername" title="yourusername"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/yourusername" title="yourusername"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg></a></li></ul>
+</div> -->
+
+  </div>
+
+</footer>
+</body>
+
+</html>
